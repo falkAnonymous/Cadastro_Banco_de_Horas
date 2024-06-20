@@ -13,6 +13,10 @@ namespace GestaoTrabalho
             InitializeComponent();
             Painel_Contrato.Location = new Point(288, 116);
             AddLista(Cmb_Funcionario, Contrato.Tercerizado, Contrato.Contrato, Contrato.Nenhum);
+            /*
+            faz com que o usuário não possa inserir 
+            livremente qualquer conteúdo na caixa de combinação
+            */
             Cmb_Funcionario.DropDownStyle = ComboBoxStyle.DropDownList;
             maskData.Click += new EventHandler(maskedTextBox1_Click);
 
